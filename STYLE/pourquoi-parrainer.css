@@ -1,0 +1,75 @@
+
+.headband {
+    background: url(../IMAGES/flamant-rose.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(216, 131, 78);
+    position: relative;
+}
+
+.headband::before {
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /*Doit être égal à la valeur de height dans ".section-1"*/
+}
+
+/*gère le style du titre qu'on veut mettre sur l'image
+doit changer height pour que ça soit au dessus de l'image*/
+.headband .container {
+    color: #ffffff;
+    height: 400px;
+    z-index: 1; 
+    position : relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headband h1{
+    margin-top: 200px; /*Mettre la moitié de la hauteur dans headband pour que le titre soit centré*/
+}
+
+.section-1 .container{
+    padding: 30px;
+    
+}
+
+.titre{
+    color:#000000;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    align-self: self-start; /*permet au texte d'etre aligné à gauche*/
+}
+
+.section-1 img{
+    align-self: self-end;
+}
+/*Ajouter un padding quand l'écran est plus petit*/
+/*padding-bottom et padding-top : 40px*/
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+.orange{
+    color:#BE6248;
+}
+
+.vert{
+    color: #183425;
+}
+
+
+.form-check-input {
+    border-radius: 5px;
+}

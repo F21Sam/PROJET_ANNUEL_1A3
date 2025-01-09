@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'rocknroll';
+	src: url('../FONT/RocknRollOne-Regular.ttf') format("truetype");
+}
+
+
+body {
+    background-color: #F7E3D3;
+    margin: 0;
+    font-family: 'rocknroll', sans-serif;
+}
+
+span{
+    display: inline;
+}
+
+
+h1{
+    position: absolute;
+    font-size: 58px;
+    color: #183425;
+    z-index: 5;
+    top: 100px;
+    left: 380px;
+}
+
+.texte{
+    position: absolute;
+    font-size: 23px;
+    color: #584343;
+    z-index: 5;
+    top: 240px;
+    left: 238px;
+    display: inline;
+    text-align: center;
+    width: 1000px;
+}
+
+
+.texte-signatures-personnel{
+    position: absolute;
+    font-size: 23px;
+    color: #3E3333;
+    z-index: 5;
+    top: 494px;
+    left: 524px;
+    display: flex;
+    text-align: center;
+}
+
+
+.texte-signature-parraint{
+    position: absolute;
+    font-size: 23px;
+    color: #3E3333;
+    z-index: 5;
+    top: 494px;
+    left: 1004px;
+    display: flex;
+    text-align: center;
+}
+
+
+.directeur{
+    position: absolute;
+    font-size: 19px;
+    color: #584343;
+    z-index: 5;
+    top: 616px;
+    left: 599px;
+    display: flex;
+    text-align: center;
+}
+
+.responsable{
+    position: absolute;
+    font-size: 19px;
+    color: #584343;
+    z-index: 5;
+    top: 770px;
+    left: 477px;
+    display: flex;
+    text-align: center;
+}
+
+
+.veterinaire{
+    position: absolute;
+    font-size: 19px;
+    color: #584343;
+    z-index: 5;
+    top: 770px;
+    left: 789px;
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+.ornenemnt-logo{
+    position: absolute;
+    z-index: 5;
+    top: -41px;
+    left: 502px;
+    display: flex;
+    text-align: center;
+}
+
+
+.grande-feuille-droite{
+    position: absolute;
+    z-index: 5;
+    top: -11px;
+    left: 779px;
+    display: flex;
+    text-align: center;
+    transform: rotate(45deg);
+}
+
+
+.grande-feuille-gauche{
+    position: absolute;
+    z-index: 5;
+    top: -11px;
+    left: 779px;
+    display: flex;
+    text-align: center;
+    transform: rotate(45deg);
+}
+
+
+.orange{
+    color: #BE6248;
+}
+
+
+.photo-animal{
+    position: absolute;
+    z-index: 5;
+    top: 511px;
+    left: 121px;
+    display: flex;
+    text-align: center;
+}
+
+.image-ronde{
+    width: 359px;
+    height: 359px; 
+    border-radius: 50%;
+    object-fit: cover;
+}

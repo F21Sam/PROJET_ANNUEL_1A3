@@ -1,0 +1,69 @@
+
+/*style pour login admin*/
+.body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+.box-area{
+    width: 930px;
+}
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+}
+
+ /*pour les formulaires*/
+ .styled-form {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f2f2f2; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style pour les champs d'entrée */
+.styled-form input[type=text],
+.styled-form input[type=date],
+.styled-form textarea,
+.styled-form select,
+.styled-form input[type=file] {
+    width: calc(100% - 12px); 
+    padding: 10px; 
+    margin: 8px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+}
+
+/* Style pour les labels */
+.styled-form label {
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
+}

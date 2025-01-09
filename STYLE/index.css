@@ -1,0 +1,185 @@
+
+.headband {
+    background: url(../IMAGES/panda-roux.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /*prend toute la hauteur de l'écran*/
+    background-color: rgb(0, 255, 255);
+    position: relative;
+}
+
+.headband::before {
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /*Doit être égal à la valeur de height dans ".section-1"*/
+}
+
+/*gère le style du titre qu'on veut mettre sur l'image
+doit changer height pour que ça soit au dessus de l'image*/
+.headband .container {
+    color: #ffffff;
+    height: 400px; /* à voir si ça sert cette ligne */
+    z-index: 1; 
+    position : relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headband h1{
+    padding-top: 43vh; /*Mettre la moitié de la hauteur dans headband pour que le titre soit centré*/
+    line-height: 1.4; /*gère l'espace d'interligne*/
+    text-align: center;
+}
+
+.section-1 .container{
+    padding: 30px;
+    
+}
+
+.titre{
+    color:#000000;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    align-self: self-start; /*permet au texte d'etre aligné à gauche*/
+}
+
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-1{
+    background-color: #F7E3D3;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-text{
+    align-content: center;
+    color: #584343;
+    
+}
+
+.section-1 .savoir-plus-btn{
+    margin-top: 50px;
+}
+
+
+.section-2{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color:#F7E3D3;
+}
+
+.col-sm-3.custom-column.p-title {
+    font-size: x-large;
+    text-align: center;
+}
+
+.section-2.p{
+    color:#BC644B;
+    font-size: x-large;
+}
+
+.circle-number{
+    margin-right: 10px;
+}
+
+
+img.custom-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Empile les éléments verticalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+
+    font-size: 1.7rem;
+}
+
+.section-3{
+    background-color: #BC644B;
+    padding: 50px;
+}
+
+.section-3 .col-sm-4{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-3 h2{
+    color: #ffffff;
+}
+
+.section-3 .custom-column{
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.section-3 .p-title{
+    font-size: large;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.section-3 p{
+    font-size: medium;
+    color: #000000;
+}
+
+
+.section-4{
+    background: url(../IMAGES/loup.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(0, 255, 255);
+    position: relative;
+}
+
+
+
+
+
+.orange{
+    color:#BC644B;
+}
+
+.vert{
+    color: #183425;
+}
+
+
+.form-check-input {
+
+    border-radius: 5px;
+}
+
+
+.col-12.col-lg-11.texte-Nala {
+    /* top: 50px; */
+    margin-top: 200px;
+    color: white;
+}

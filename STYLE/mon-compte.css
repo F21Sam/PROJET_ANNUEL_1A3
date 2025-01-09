@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Rosario';
+    src: url('../FONT/Rosario-VariableFont_wght.ttf') format('truetype');
+}
+
+.headband {
+    background: url(../IMAGES/tigre_1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(216, 131, 78);
+    position: relative;
+}
+
+/* Permet de mettre un "filtre" l'image */
+.headband::before {
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /*Doit être égal à la valeur de height dans ".section-1"*/
+}
+
+/*gère le style du titre qu'on veut mettre sur l'image
+doit changer height pour que ça soit au dessus de l'image*/
+.headband .container {
+    color: #ffffff;
+    height: 400px;
+    z-index: 1; 
+    position : relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headband h1{
+    margin-top: 200px; /*Mettre la moitié de la hauteur dans headband pour que le titre soit centré*/
+}
+
+/* Barre de navigation sur les pages du compte de l'utilisateur*/
+.sidebar {
+    background-color:antiquewhite;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 300px; /* Adjust this value to control the vertical position */
+    left: 200px; /* Adjust this value to control the horizontal position */
+    height: auto;
+    overflow-y: auto;
+    z-index: 2; /* Ensure it is above the headband */
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+}
+
+.sidebar .nav-link {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Espace où sont les éléments de la page */
+.main-content {
+    flex: 1;
+    padding: 50px;
+    padding-bottom: 50px;
+    margin-left: 500px; 
+    
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    margin-top: 0;
+}
+
+/*  */
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .main-content {
+        flex: 1;
+        padding-top: 50px;
+        padding-left: 0;
+        padding-right: 50px;
+        padding-bottom: 0;
+        padding-bottom: 150px;
+        
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10%;/* Ajout de padding pour une meilleure apparence sur les petits écrans */
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments horizontalement */
+        align-content: center;
+        padding: 0;
+    }
+
+}
+
+input{
+    font-family: 'Rosario';
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-clip: padding-box;
+    border: 3px solid #183425;
+    border-radius: 85px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-title{
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}

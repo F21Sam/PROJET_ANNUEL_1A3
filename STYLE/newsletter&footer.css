@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Rosario';
+    src: url('../FONT/Rosario-VariableFont_wght.ttf') format('truetype');
+}
+
+
+/*Gère le style de la Newsletter*/
+.newsletter{
+    background-color:antiquewhite;
+    display: flex;
+}
+/*Agmenter height quand l'écran renvoie l'image à la ligne*/
+
+.newsletter .container{
+    padding-top: 5px;
+    padding: 30px;
+    align-self: flex-start;
+}
+
+.newsletter .row{
+    padding: 50px;
+}
+
+.RGPD a{
+    color: black;
+}
+
+
+
+footer{
+    background-color:#183425;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-links{
+    margin-top: 1.5rem; /*permet de revenir à la ligne*/
+}
+
+
+/* Taille tablette */
+@media (max-width: 991px) {
+
+    
+    .custom-img{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .newsletter .row{
+        padding: 0;
+    }
+
+    .img-fluid{
+        max-width: 50%;
+        height: auto;
+    }
+
+
+    .logo-img{
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .logo-img{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.links-section{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+.amimal-logo{
+    width: 99px;
+    height: 112px;
+}
+
+
+.footer-link{
+    margin-bottom: 10px;
+}
+
+.footer-links-column p{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 15px;    
+}
+
+.footer-links-column a{
+    font-family: 'Rosario';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.footer-links-column a:hover{
+    text-decoration: underline;
+    
+}
+
+
+.link-title{
+    margin: 8px;
+}
+
+
+.CGV {
+    font-family: 'Rosario';
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+}
+
+.CGV:hover {
+    text-decoration: underline;
+}

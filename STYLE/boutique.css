@@ -1,0 +1,210 @@
+.headband {
+    background: url(../IMAGES/perroquet_4.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 255, 255);
+    position: relative;
+}
+
+.headband::before {
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /*Doit être égal à la valeur de height dans ".section-1"*/
+}
+
+/*gère le style du titre qu'on veut mettre sur l'image
+doit changer height pour que ça soit au dessus de l'image*/
+.headband .container {
+    color: #ffffff;
+    height: 400px;
+    z-index: 1; 
+    position : relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headband h1{
+    margin-top: 200px; /*Mettre la moitié de la hauteur dans headband pour que le titre soit centré*/
+}
+
+.section-1 .container{
+    padding: 30px;
+    
+}
+
+.titre{
+    color:#000000;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    align-self: self-start; /*permet au texte d'etre aligné à gauche*/
+}
+
+.section-1 img{
+    align-self: self-end;
+}
+/*Ajouter un padding quand l'écran est plus petit*/
+/*padding-bottom et padding-top : 40px*/
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titre-colone-search{
+    color:#183425;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* p */
+.soustitre-colone-search{
+
+    color:#183425;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.species-selector{
+    border-color: #183425;
+    border: 3px solid #183425;
+    border-radius: 3px;
+    border-radius: 85px;
+}
+
+
+
+
+
+/*Que sur grand écran pour ajuster le bouton*/
+.input-group{
+    width: 150%;
+}
+
+.reset-btn{
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .input-group{
+        width: 100%;
+    }
+
+    /* A FAIRE */
+    .search-column{
+        align-items: center;
+    }
+}
+
+
+h2{
+    color:#584343;
+}
+
+.orange{
+    color:#BE6248;
+}
+
+.vert{
+    color: #183425;
+}
+
+
+
+.section-1 .col{
+    display: flex;
+    align-self: flex-end;
+}
+
+.section-1 .fiche-produit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*background-color: #f4e4e0; */
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.section-1 img{
+    margin: 0px;
+    
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+
+.section-1 .form-mail{
+    width: 80%;
+}
+
+.section-1 .col-lg-9 .container .row .col-md-3 .col-sm-6 {
+    display: flex;
+    align-items:flex-start; /* Alignement vertical au centre */
+}
+
+
+
+.search-column {
+    margin-left: 20px;
+}
+
+
+
+
+.image-container {
+    width: 230px; /* Ajuster la largeur et la hauteur de l'image */
+    height: 230px;
+    border-radius: 100%; /* Rend le conteneur rond */
+    overflow: hidden; /* Cache tout ce qui dépasse du conteneur rond */
+    margin: 10px;
+}
+
+
+.image-container:hover {
+    transform: scale(1.1);
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour s'assurer que l'image remplit complètement le conteneur */
+}
+
+.image-container img:hover{
+    width: 115%;
+    height: 115%;
+}
+
+
+/* Styles pour aligner les profils d'animaux en grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 60px; /* Espace entre les éléments de la grille */
+}
+
+.fiche-produit {
+    padding: 10px;
+}
+
+
+a {
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Utilise la couleur du texte parent */
+}
+
+
+.orange {
+    color: orange;
+}

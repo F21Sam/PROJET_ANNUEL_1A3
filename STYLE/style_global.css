@@ -1,0 +1,281 @@
+/*Importation des polices de notre charte graphique*/
+@font-face {
+	font-family: 'rocknroll';
+	src: url('../FONT/RocknRollOne-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Rosario';
+    src: url('../FONT/Rosario-VariableFont_wght.ttf') format('truetype');
+}
+
+/*Font magoritairement utilisée sur le site*/
+body{
+    font-family: 'rocknroll', sans-serif;;
+}
+
+
+
+header {
+    background-color: #183425;
+}
+
+
+/* Style barre de navigation principale */
+.navbar {
+    background-color:#183425;
+    position: fixed;
+    margin: 0%;
+    padding: 9px;
+}
+
+.nav-link{
+    color: white;
+    position: relative;
+    outline: none;
+}
+
+/* Changer la couleur d'arrière-plan des liens de navigation au survol */
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.7); /* Changez la couleur du texte si nécessaire */
+}
+
+/* Changer la couleur d'arrière-plan des liens de navigation actifs */
+.nav-link.active{
+    color:#BE6248!important; /* Changez la couleur du texte si nécessaire */
+}
+
+/*Permet de rajouter de la hateur à la barre de navigation*/
+.logo-container{
+    padding: 9px;
+}
+
+.logo-navbar{
+    width: 70px;
+    height: 78px;
+}
+
+
+
+/*Style du offcanvas ( le menu sur les écrans plus étroits (menu qui sort sur le côté))*/
+.offcanvas{
+    background-color: #183425;
+    position: fixed;
+    margin: 0%;
+    --bs-offcanvas-width: 250px;
+}
+
+.offcanvas .logo-container{
+    padding: 9px;
+}
+
+.offcanvas-header{
+    background-color:#183425;
+}
+
+
+.form-check p{
+    font-family: 'Rosario', sans-serif;
+}
+
+
+
+
+/*Pour le responsive, largeur d'écran égale ou inférieure à min-width*/
+
+@media (max-width: 991px) {
+
+    /*Barre de navigation*/
+    .navbar {
+        background-color: #183425;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px;
+    }
+  
+    .navbar-toggler {
+        margin-right: 24px;
+        height: 40px;
+        width: 50px;
+        background-color:#183425;
+        border: none;
+        padding: 0;
+    }
+  
+    .logo-container {
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1; /* Permet au logo de prendre autant d'espace que possible */
+    }
+    
+    .logo-navbar{
+        width: 52px;
+        height: 58px;
+    }
+
+    .logo-container img {
+      max-width: 100%; /* Fait en sorte que le logo ne dépasse pas de la barre de navigation */
+    }
+    
+
+
+    /* page */
+    .custom-img{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .newsletter .row{
+        padding: 0;
+    }
+
+    .img-fluid{
+        max-width: 50%;
+        height: auto;
+    }
+}
+  
+
+
+
+
+/* Gère les ligne sous les liens de la nav barre */
+.nav-link::before { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #BE6248;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+/*Boutons*/
+.btn-primary {
+    border-radius: 85px;
+    border-width: 2.75px;
+    
+}
+
+.btn-orange{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #BE6248;
+    --bs-btn-border-color: #BE6248;
+
+    --bs-btn-hover-color: rgba(255, 255, 255, 0.7);
+    --bs-btn-hover-bg:  rgba(188, 100, 75, 0.7);
+    --bs-btn-hover-border-color: rgba(188, 100, 75, 0.7);
+    
+    --bs-btn-active-color: #BE6248;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-active-border-color: #BE6248;
+    
+    --bs-btn-disabled-color: #BE6248;
+    --bs-btn-disabled-bg: #BE6248;
+    --bs-btn-disabled-border-color: #BE6248;
+}
+
+
+.btn-vert {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #183425;
+    --bs-btn-border-color: #183425;
+
+    --bs-btn-hover-color: rgba(255, 255, 255, 0.7);
+    --bs-btn-hover-bg:  rgba(24, 52, 27, 0.7);
+    --bs-btn-hover-border-color: rgba(24, 52, 27, 0.7);
+    
+    --bs-btn-active-color: #183425;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-active-border-color: #183425;
+    
+    --bs-btn-disabled-color: #183425;
+    --bs-btn-disabled-bg: #183425;
+    --bs-btn-disabled-border-color: #183425;
+
+    border-radius: 85px;
+    border-width: 2.75px;
+    
+}
+
+
+.btn-icon{
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+}
+
+
+
+/* A revoir */
+.input-text {
+    font-family: 'Rosario';
+    display: block;
+    width: 50%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-clip: padding-box;
+    border: 3px solid #183425;
+    border-radius: 85px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.send-input-btn{
+    border: 3px solid #183425;
+    background-color: #183425;
+    color: #fff;
+    border-radius: 85px;
+    right: 20px;
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:rgba(88,107,97,1);
+    --bs-btn-hover-border-color:#183425;
+    
+    --bs-btn-active-color: #183425;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-active-border-color:#183425;
+    
+    --bs-btn-disabled-color:white;
+    --bs-btn-disabled-bg: #183425;
+    --bs-btn-disabled-border-color: #183425;
+
+    border-radius: 85px;
+    border-width: 2.75px;
+}
+
+
+.orange{
+    color:#BE6248;
+}
+
+.vert{
+    color: #183425;
+}
+
+
+/* ?? */
+.form-check-input {
+    border-radius: 5px;
+}
+
+
